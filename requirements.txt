@@ -1,0 +1,8 @@
+duckdb==1.5.5        # all queries over the PatentsView tables
+pandas>=3.0.1
+numpy>=2.0
+scipy>=1.18.1        # normal and chi-squared p-values
+pyfixest==0.60.0     # Poisson with absorbed fixed effects and two-way clusters; pinned because
+                     # its defaults (small-sample correction, tolerances) decide the numbers
+statsmodels==0.15.0  # tests only: an independent check of pyfixest's coefficients
+pytest>=8.0
